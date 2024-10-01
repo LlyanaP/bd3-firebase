@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bd3-firebase</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+</body>
+
+    <!-- IMPORT DO SDK DO FIREBASE --> 
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script> 
+
+
+    <!-- IMPORT DO SDK DO FIRESTORE --> 
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> 
+
+    <!-- CONEXÃO COM FIREBASE -->
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDd3_Ghb40G1FSdPMLoKWhrnTmfttsaTCg",
+            authDomain: "bd3-app-libri-pollyana-costa.firebaseapp.com",
+            projectId: "bd3-app-libri-pollyana-costa",
+            storageBucket: "bd3-app-libri-pollyana-costa.appspot.com",
+            messagingSenderId: "656539185364",
+            appId: "1:656539185364:web:f0f1534a9d3107d49f0b41",
+            measurementId: "G-47BC3M4XRZ"
+          };
+          /*Inicializa o FIREBASE*/
+          firebase.initializeApp(firebaseConfig);
+
+          /*Inicializa o FIRESTORE*/
+          const db = firebase.firestore();
+          console.log(db);
+
+    </script>
+
+    <!-- IMPORTAÇÃO DO ARQUIVO app.js -->
+    <script src="app.js"></script>
+</html>
